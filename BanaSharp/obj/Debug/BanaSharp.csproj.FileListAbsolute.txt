@@ -1,1 +1,2 @@
 D:\BanaBot\BanaBot v1.0.0\BanaSharp\bin\Release\BanaSharp.exe.config
+E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.exe.config
