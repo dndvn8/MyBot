@@ -54,7 +54,7 @@ namespace Support
         /// </summary>
         protected PluginBase()
         {
-            Author = "h3h3";
+            Author = "Banana";
             ChampionName = Player.ChampionName;
             Version = Program.Version;
 
