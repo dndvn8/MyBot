@@ -73,15 +73,15 @@ namespace Support.Util
 
                             if (gitVersion != Program.Version)
                             {
-                                Game.PrintChat("<font color='#15C3AC'>AutoSharpporting:</font> <font color='#FF0000'>" +
+                                Game.PrintChat("<font color='#15C3AC'>BanaSharp:</font> <font color='#FF0000'>" +
                                                "OUTDATED - Please Update to Version: " + gitVersion + "</font>");
-                                Game.PrintChat("<font color='#15C3AC'>AutoSharpporting:</font> <font color='#FF0000'>" +
+                                Game.PrintChat("<font color='#15C3AC'>BanaSharp:</font> <font color='#FF0000'>" +
                                                "OUTDATED - Please Update to Version: " + gitVersion + "</font>");
-                                Game.PrintChat("<font color='#15C3AC'>AutoSharpporting:</font> <font color='#FF0000'>" +
+                                Game.PrintChat("<font color='#15C3AC'>BanaSharp:</font> <font color='#FF0000'>" +
                                                "OUTDATED - Please Update to Version: " + gitVersion + "</font>");
-                                Game.PrintChat("<font color='#15C3AC'>AutoSharpporting:</font> <font color='#FF0000'>" +
+                                Game.PrintChat("<font color='#15C3AC'>BanaSharp:</font> <font color='#FF0000'>" +
                                                "OUTDATED - Please Update to Version: " + gitVersion + "</font>");
-                                Game.PrintChat("<font color='#15C3AC'>AutoSharpporting:</font> <font color='#FF0000'>" +
+                                Game.PrintChat("<font color='#15C3AC'>BanaSharp:</font> <font color='#FF0000'>" +
                                                "OUTDATED - Please Update to Version: " + gitVersion + "</font>");
                             }
                         }
@@ -96,7 +96,7 @@ namespace Support.Util
 
         public static void PrintMessage(string message)
         {
-            Game.PrintChat("<font color='#15C3AC'>AutoSharpporting:</font> <font color='#FFFFFF'>" + message + "</font>");
+            Game.PrintChat("<font color='#15C3AC'>BanaSharp:</font> <font color='#FFFFFF'>" + message + "</font>");
         }
 
         public static bool EnemyInRange(int numOfEnemy, float range)
