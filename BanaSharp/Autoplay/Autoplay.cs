@@ -112,8 +112,8 @@ namespace Support
                     _safe = Blue;
                 }
             }
-            new AutoLevel(TreesAutoLevel.GetSequence().Select(l => l - 1));
-            AutoLevel.Enable();
+            //new AutoLevel(TreesAutoLevel.GetSequence().Select(l => l - 1));
+            //AutoLevel.Enable();
             FileHandler.DoChecks();
             MetaHandler.LoadObjects();
             
@@ -450,7 +450,7 @@ namespace Support
 
         private static void WalkAround(Obj_AI_Hero follow)
         {
-            _randRange = Rand.Next(-367, 376);
+            _randRange = Rand.Next(-267, 276);
             _randSeconds = Rand.Next(500, 3500);
             if (Environment.TickCount - _stepTime >= _randSeconds && !_overrideAttackUnitAction)
             {

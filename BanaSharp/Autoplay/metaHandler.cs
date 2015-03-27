@@ -29,7 +29,7 @@ namespace Support
 
         public static string[] Supports =
         {
-            "Alistar", "Annie", "Blitzcrank", "Braum", "Fiddlesticks", "Janna", "Karma",
+            "Alistar", "Blitzcrank", "Braum", "Fiddlesticks", "Janna", "Karma",
             "Kayle", "Leona", "Lulu", "Morgana", "Nunu", "Nami", "Soraka", "Sona", "Taric", "Thresh", "Zilean", "Zyra"
         };
 
@@ -45,9 +45,9 @@ namespace Support
             "Viktor", "Vladimir", "Xerath", "XinZhao", "Yorick", "Ziggs", "Zilean", "Zyra"
         };
 
-        private static readonly ItemId[] SRShopList =
+        private static readonly ItemId[] SRShopListAP =
         {
-            ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap,
+            ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap,ItemId.Mejais_Soulstealer,
             ItemId.Morellonomicon, ItemId.Athenes_Unholy_Grail, ItemId.Rylais_Crystal_Scepter, ItemId.Mikaels_Crucible,
             ItemId.Frost_Queens_Claim, ItemId.Liandrys_Torment, ItemId.Lich_Bane, ItemId.Locket_of_the_Iron_Solari,
             ItemId.Rod_of_Ages, ItemId.Void_Staff, ItemId.Hextech_Gunblade, ItemId.Sorcerers_Shoes
@@ -58,6 +58,12 @@ namespace Support
             ItemId.Wooglets_Witchcap, ItemId.Rod_of_Ages,
             ItemId.Rylais_Crystal_Scepter, ItemId.Lich_Bane, ItemId.Liandrys_Torment, ItemId.Morellonomicon,
             ItemId.Locket_of_the_Iron_Solari, ItemId.Void_Staff, ItemId.Sorcerers_Shoes
+        };
+
+        private static readonly ItemId[] SRShopListAD =
+        {
+            ItemId.Statikk_Shiv, ItemId.Berserkers_Greaves, ItemId.The_Bloodthirster, ItemId.Trinity_Force, ItemId.Sanguine_Blade, ItemId.Bilgewater_Cutlass,
+            ItemId.Infinity_Edge, ItemId.Last_Whisper
         };
 
         private static readonly ItemId[] ARAMShopListAP =
@@ -102,6 +108,7 @@ namespace Support
                 if (Autoplay.Bot.InFountain() && (Autoplay.Bot.Gold == 475 || Autoplay.Bot.Gold == 515))
                     //validates on SR untill 1:55 game time
                 {
+                    /*
                     int startingItem = Autoplay.Rand.Next(-6, 7);
                     if (startingItem < 0)
                     {
@@ -114,6 +121,19 @@ namespace Support
                     if (startingItem > 0)
                     {
                         Autoplay.Bot.BuyItem(ItemId.Ancient_Coin);
+                    }
+                     */
+                    if (AP.Any(apchamp => Autoplay.Bot.BaseSkinName.ToLower() == apchamp.ToLower()))
+                    {
+                        Autoplay.Bot.BuyItem(ItemId.Dorans_Ring);
+                    }
+                    else if (Supports.Any(sp => Autoplay.Bot.BaseSkinName.ToLower() == sp.ToLower()))
+                    {
+                        Autoplay.Bot.BuyItem(ItemId.Ancient_Coin);
+                    }
+                    else
+                    {
+                        Autoplay.Bot.BuyItem(ItemId.Dorans_Blade);
                     }
                     Autoplay.Bot.BuyItem(ItemId.Warding_Totem_Trinket);
                 }
@@ -164,7 +184,9 @@ namespace Support
             var map = Utility.Map.GetMap();
             if (map.Type == Utility.Map.MapType.SummonersRift)
             {
-                return SRShopList.OrderBy(item => Autoplay.Rand.Next()).ToArray();
+                if (AP.Any(apchamp => Autoplay.Bot.BaseSkinName.ToLower() == apchamp.ToLower()))
+                {return SRShopListAP.OrderBy(item => Autoplay.Rand.Next()).ToArray();}
+                return SRShopListAD.OrderBy(item => Autoplay.Rand.Next()).ToArray();
             }
             if (map.Type == Utility.Map.MapType.TwistedTreeline)
             {
@@ -238,6 +260,11 @@ namespace Support
         public static bool IsSupport(Obj_AI_Hero hero)
         {
             return Supports.Any(support => hero.BaseSkinName.ToLower() == support.ToLower());
+        }
+
+        public static bool IsAp(Obj_AI_Hero hero)
+        {
+            return AP.Any(ap => hero.BaseSkinName.ToLower() == ap.ToLower());
         }
 
         public static int NearbyAllyMinions(Obj_AI_Base x, int distance)
