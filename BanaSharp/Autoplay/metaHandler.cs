@@ -48,8 +48,8 @@ namespace Support
         private static readonly ItemId[] SRShopListAP =
         {
             ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap,ItemId.Mejais_Soulstealer,
-            ItemId.Morellonomicon, ItemId.Athenes_Unholy_Grail, ItemId.Rylais_Crystal_Scepter, ItemId.Mikaels_Crucible,
-            ItemId.Frost_Queens_Claim, ItemId.Liandrys_Torment, ItemId.Lich_Bane, ItemId.Locket_of_the_Iron_Solari,
+            ItemId.Morellonomicon, ItemId.Athenes_Unholy_Grail, ItemId.Rylais_Crystal_Scepter,
+            ItemId.Liandrys_Torment, ItemId.Lich_Bane,
             ItemId.Rod_of_Ages, ItemId.Void_Staff, ItemId.Hextech_Gunblade, ItemId.Sorcerers_Shoes
         };
 
@@ -62,8 +62,8 @@ namespace Support
 
         private static readonly ItemId[] SRShopListAD =
         {
-            ItemId.Statikk_Shiv, ItemId.Berserkers_Greaves, ItemId.The_Bloodthirster, ItemId.Trinity_Force, ItemId.Sanguine_Blade, ItemId.Bilgewater_Cutlass,
-            ItemId.Infinity_Edge, ItemId.Last_Whisper
+           ItemId.Berserkers_Greaves, ItemId.Statikk_Shiv,ItemId.Phantom_Dancer, ItemId.The_Bloodthirster, ItemId.Trinity_Force, ItemId.Zephyr,
+            ItemId.Infinity_Edge, ItemId.Last_Whisper, ItemId.Blade_of_the_Ruined_King
         };
 
         private static readonly ItemId[] ARAMShopListAP =
