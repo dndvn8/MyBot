@@ -1,2 +1,15 @@
 E:\LienMinhHuyenThoai\LeagueSharp\LocalAssemblies\AutoLeveler_\bin\Release\AutoLeveler.exe.config
 E:\GitHub\MyBot\AutoLeveler_\bin\Release\AutoLeveler.exe.config
+E:\GitHub\MyBot\AutoLeveler_\obj\Debug\AutoLeveler.csprojResolveAssemblyReference.cache
+E:\GitHub\MyBot\AutoLeveler_\obj\Debug\AutoLeveler.csproj.GenerateResource.Cache
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\AutoLeveler.exe
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\AutoLeveler.pdb
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\LeagueSharp.Common.dll
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\LeagueSharp.dll
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\SharpDX.Direct3D9.dll
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\SharpDX.dll
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\clipper_library.dll
+E:\GitHub\MyBot\AutoLeveler_\bin\Release\LeagueSharp.xml
+E:\GitHub\MyBot\AutoLeveler_\obj\Debug\AutoLeveler.Properties.Resources.resources
+E:\GitHub\MyBot\AutoLeveler_\obj\Debug\AutoLeveler.exe
+E:\GitHub\MyBot\AutoLeveler_\obj\Debug\AutoLeveler.pdb
