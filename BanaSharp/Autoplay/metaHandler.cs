@@ -36,7 +36,7 @@ namespace Support
         public static string[] AP =
         {
             "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Azir", "Blitzcrank",
-            "Brand", "Braum", "Cassiopeia", "Chogath", "Diana", "Elise", "Evelynn", "Ezreal", "FiddleSticks", "Fizz",
+            "Brand", "Braum", "Cassiopeia", "Chogath", "Diana", "Elise", "Evelynn", "FiddleSticks", "Fizz",
             "Galio", "Gragas", "Hecarim", "Heimerdinger", "Irelia", "Janna", "Jax", "Karma", "Karthus", "Kassadin",
             "Katarina", "Kayle", "Kennen", "KogMaw", "LeBlanc", "Lissandra", "Lulu", "Lux", "Malphite", "Malzahar",
             "Maokai", "Morderkaiser", "Morgana", "Nami", "Nautilus", "Nidalee", "Nunu", "Orianna", "RekSai", "Rumble",
@@ -137,17 +137,17 @@ namespace Support
                     }
                     Autoplay.Bot.BuyItem(ItemId.Warding_Totem_Trinket);
                 }
-                if (File.Exists(FileHandler._theFile) && (FileHandler.CustomShopList != null))
-                {
-                    foreach (var item in FileHandler.CustomShopList)
-                    {
-                        if (!HasItem(item))
-                        {
-                            BuyItem(item);
-                        }
-                    }
-                }
-                else
+                //if (File.Exists(FileHandler._theFile) && (FileHandler.CustomShopList != null))
+                //{
+                    //foreach (var item in FileHandler.CustomShopList)
+                    //{
+                        //if (!HasItem(item))
+                       // {
+                            //BuyItem(item);
+                       // }
+                   // }
+               // }
+                //else
                 {
                     foreach (var item in GetDefaultItemArray())
                     {
@@ -185,7 +185,7 @@ namespace Support
             if (map.Type == Utility.Map.MapType.SummonersRift)
             {
                 if (AP.Any(apchamp => Autoplay.Bot.BaseSkinName.ToLower() == apchamp.ToLower()))
-                {return SRShopListAP.OrderBy(item => Autoplay.Rand.Next()).ToArray();}
+                {return SRShopListAP;}
                 return SRShopListAD.OrderBy(item => Autoplay.Rand.Next()).ToArray();
             }
             if (map.Type == Utility.Map.MapType.TwistedTreeline)
