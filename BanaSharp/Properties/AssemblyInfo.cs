@@ -1,17 +1,17 @@
 ﻿#region LICENSE
 
-// Copyright 2014 - 2014 BanaSharp
-// AssemblyInfo.cs is part of BanaSharp.
-// BanaSharp is free software: you can redistribute it and/or modify
+// Copyright 2014 - 2014 AutoSharpporting
+// AssemblyInfo.cs is part of AutoSharpporting.
+// AutoSharpporting is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
-// BanaSharp is distributed in the hope that it will be useful,
+// AutoSharpporting is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 // GNU General Public License for more details.
 // You should have received a copy of the GNU General Public License
-// along with BanaSharp. If not, see <http://www.gnu.org/licenses/>.
+// along with AutoSharpporting. If not, see <http://www.gnu.org/licenses/>.
 
 #endregion
 
@@ -26,11 +26,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("BanaSharp")]
+[assembly: AssemblyTitle("AutoSharpporting")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BanaSharp")]
+[assembly: AssemblyProduct("AutoSharpporting")]
 [assembly: AssemblyCopyright("Copyright © LeagueSharp 2014-2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -56,5 +56,5 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 
-[assembly: AssemblyVersion("5.3.27.12")]
-[assembly: AssemblyFileVersion("5.3.27.12")]
+[assembly: AssemblyVersion("5.1.27.276")]
+[assembly: AssemblyFileVersion("5.1.27.276")]

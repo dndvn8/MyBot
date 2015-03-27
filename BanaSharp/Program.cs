@@ -57,7 +57,7 @@ namespace Support
                         Activator.CreateInstance(type);
                         return;
                     }
-                    Game.PrintChat("Something went wrong, tell Banana.");
+                    Game.PrintChat("Something went wrong, tell sosharp.");
                 }
                 catch (Exception e)
                 {
