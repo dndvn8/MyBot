@@ -112,8 +112,8 @@ namespace Support
                     _safe = Blue;
                 }
             }
-            //new AutoLevel(TreesAutoLevel.GetSequence());
-            //AutoLevel.Enable();
+            new AutoLevel(TreesAutoLevel.GetSequence());
+            AutoLevel.Enable();
             FileHandler.DoChecks();
             MetaHandler.LoadObjects();
             
