@@ -1,3 +1,13 @@
 D:\BanaBot\BanaBot v1.0.0\BanaSharp\bin\Release\BanaSharp.exe.config
 E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.exe.config
 E:\GitHub\MyBot\BanaSharp\obj\Debug\BanaSharp.csprojResolveAssemblyReference.cache
+E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.exe
+E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.pdb
+E:\GitHub\MyBot\BanaSharp\bin\Release\clipper_library.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.Common.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\SharpDX.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\SharpDX.Direct3D9.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.xml
+E:\GitHub\MyBot\BanaSharp\obj\Debug\BanaSharp.exe
+E:\GitHub\MyBot\BanaSharp\obj\Debug\BanaSharp.pdb
