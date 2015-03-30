@@ -25,7 +25,7 @@ namespace AutoLeveler
             Menu = new Menu("AutoLevelSpells", "AutoLevelSpells", true);
             Menu.AddItem(new MenuItem("Enabled", "Enabled", true).SetValue(true));
             Menu.AddToMainMenu();
-            Game.OnGameUpdate += Game_OnGameUpdate;
+            Game.OnUpdate += Game_OnGameUpdate;
         }
 
         private static void Game_OnGameUpdate(EventArgs args)
