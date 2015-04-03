@@ -26,22 +26,15 @@ namespace Support
         public static List<Obj_AI_Hero> AllHeroes;
         public static List<Obj_AI_Hero> AllyHeroes;
         public static List<Obj_AI_Hero> EnemyHeroes;
-
-        public static string[] Supports =
-        {
-            "Alistar", "Blitzcrank", "Braum", "Fiddlesticks", "Janna", "Karma",
-            "Kayle", "Leona", "Lulu", "Morgana", "Nunu", "Nami", "Soraka", "Sona", "Taric", "Thresh", "Zilean", "Zyra"
-        };
-
+        public static string[] Supports = { "Alistar", "Annie", "Blitzcrank", "Braum", "Fiddlesticks", "Janna", "Karma", "Kayle", "Leona", "Lulu", "Morgana", "Nunu", "Nami", "Soraka", "Sona", "Taric", "Thresh", "Zilean", "Zyra" };
         public static string[] AP =
         {
             "Ahri", "Akali", "Alistar", "Amumu", "Anivia", "Annie", "Azir", "Blitzcrank",
-            "Brand", "Braum", "Cassiopeia", "Chogath", "Diana", "Elise", "Evelynn", "FiddleSticks", "Fizz",
+            "Brand", "Braum", "Cassiopeia", "Chogath", "Diana", "Elise", "Evelynn", "Ezreal", "FiddleSticks", "Fizz",
             "Galio", "Gragas", "Hecarim", "Heimerdinger", "Irelia", "Janna", "Jax", "Karma", "Karthus", "Kassadin",
             "Katarina", "Kayle", "Kennen", "KogMaw", "LeBlanc", "Lissandra", "Lulu", "Lux", "Malphite", "Malzahar",
             "Maokai", "Morderkaiser", "Morgana", "Nami", "Nautilus", "Nidalee", "Nunu", "Orianna", "RekSai", "Rumble",
-            "Ryze", "Shaco", "Singed", "Sona", "Soraka", "Swain", "Syndra", "Teemo", "Thresh", "TwistedFate", "veigar",
-            "VelKoz",
+            "Ryze", "Shaco", "Singed", "Sona", "Soraka", "Swain", "Syndra", "Teemo", "Thresh", "TwistedFate", "veigar", "VelKoz",
             "Viktor", "Vladimir", "Xerath", "XinZhao", "Yorick", "Ziggs", "Zilean", "Zyra"
         };
 
@@ -52,51 +45,23 @@ namespace Support
             ItemId.Liandrys_Torment, ItemId.Lich_Bane,
             ItemId.Rod_of_Ages, ItemId.Void_Staff, ItemId.Hextech_Gunblade, ItemId.Sorcerers_Shoes
         };
-
-        private static readonly ItemId[] TTShopList =
-        {
-            ItemId.Wooglets_Witchcap, ItemId.Rod_of_Ages,
-            ItemId.Rylais_Crystal_Scepter, ItemId.Lich_Bane, ItemId.Liandrys_Torment, ItemId.Morellonomicon,
-            ItemId.Locket_of_the_Iron_Solari, ItemId.Void_Staff, ItemId.Sorcerers_Shoes
-        };
-
         private static readonly ItemId[] SRShopListAD =
         {
            ItemId.Berserkers_Greaves, ItemId.Statikk_Shiv,ItemId.Phantom_Dancer, ItemId.The_Bloodthirster, ItemId.Trinity_Force, ItemId.Zephyr,
             ItemId.Infinity_Edge, ItemId.Last_Whisper, ItemId.Blade_of_the_Ruined_King
         };
-
-        private static readonly ItemId[] ARAMShopListAP =
-        {
-            ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap,
-            ItemId.Rod_of_Ages, ItemId.Rylais_Crystal_Scepter, ItemId.Will_of_the_Ancients, ItemId.Zekes_Herald,
-            ItemId.Locket_of_the_Iron_Solari, ItemId.Void_Staff, ItemId.Hextech_Sweeper, ItemId.Iceborn_Gauntlet,
-            ItemId.Abyssal_Scepter, ItemId.Sorcerers_Shoes
-        };
-
-        private static readonly ItemId[] ARAMShopListAD =
-        {
-            ItemId.Blade_of_the_Ruined_King, ItemId.Infinity_Edge,
-            ItemId.Phantom_Dancer, ItemId.Sanguine_Blade, ItemId.Mercurial_Scimitar, ItemId.Zephyr,
-            ItemId.Maw_of_Malmortius, ItemId.Statikk_Shiv, ItemId.Berserkers_Greaves
-        };
-
-        private static readonly ItemId[] CrystalScar =
-        {
-            ItemId.Rod_of_Ages_Crystal_Scar, ItemId.Wooglets_Witchcap,
-            ItemId.Void_Staff, ItemId.Athenes_Unholy_Grail, ItemId.Abyssal_Scepter, ItemId.Liandrys_Torment,
-            ItemId.Morellonomicon, ItemId.Rylais_Crystal_Scepter, ItemId.Sorcerers_Shoes
-        };
-
-        private static readonly ItemId[] Other = {};
-        private static int LastShopAttempt;
+        static readonly ItemId[] TTShopList = { ItemId.Wooglets_Witchcap, ItemId.Rod_of_Ages, ItemId.Rylais_Crystal_Scepter, ItemId.Lich_Bane, ItemId.Liandrys_Torment, ItemId.Morellonomicon, ItemId.Locket_of_the_Iron_Solari, ItemId.Void_Staff, ItemId.Sorcerers_Shoes };
+        static readonly ItemId[] ARAMShopListAP = { ItemId.Zhonyas_Hourglass, ItemId.Rabadons_Deathcap, ItemId.Rod_of_Ages, ItemId.Rylais_Crystal_Scepter, ItemId.Will_of_the_Ancients, ItemId.Zekes_Herald, ItemId.Locket_of_the_Iron_Solari, ItemId.Void_Staff, ItemId.Hextech_Sweeper, ItemId.Iceborn_Gauntlet, ItemId.Abyssal_Scepter, ItemId.Sorcerers_Shoes };
+        static readonly ItemId[] ARAMShopListAD = { ItemId.Blade_of_the_Ruined_King, ItemId.Infinity_Edge, ItemId.Phantom_Dancer, ItemId.Sanguine_Blade, ItemId.Mercurial_Scimitar, ItemId.Zephyr, ItemId.Maw_of_Malmortius, ItemId.Statikk_Shiv, ItemId.Berserkers_Greaves };
+        static readonly ItemId[] CrystalScar = { ItemId.Rod_of_Ages_Crystal_Scar, ItemId.Wooglets_Witchcap, ItemId.Void_Staff, ItemId.Athenes_Unholy_Grail, ItemId.Abyssal_Scepter, ItemId.Liandrys_Torment, ItemId.Morellonomicon, ItemId.Rylais_Crystal_Scepter, ItemId.Sorcerers_Shoes };
+        static readonly ItemId[] Other = { };
+        static int LastShopAttempt;
 
         public static void DoChecks()
         {
             var map = Utility.Map.GetMap();
 
-            if (map != null &&
-                (map.Type == Utility.Map.MapType.SummonersRift || map.Type == Utility.Map.MapType.TwistedTreeline))
+            if (map != null && (map.Type == Utility.Map.MapType.SummonersRift || map.Type == Utility.Map.MapType.TwistedTreeline))
             {
                 if (Autoplay.Bot.InFountain() && Autoplay.NearestAllyTurret != null)
                 {
@@ -105,68 +70,39 @@ namespace Support
             }
             if (Autoplay.Bot.InFountain())
             {
-                if (Autoplay.Bot.InFountain() && (Autoplay.Bot.Gold == 475 || Autoplay.Bot.Gold == 515))
-                    //validates on SR untill 1:55 game time
-                {
-                    /*
-                    int startingItem = Autoplay.Rand.Next(-6, 7);
-                    if (startingItem < 0)
+                if (Autoplay.Bot.InFountain() && (Autoplay.Bot.Gold == 475 || Autoplay.Bot.Gold == 515)) //validates on SR untill 1:55 game time
                     {
-                        Autoplay.Bot.BuyItem(ItemId.Spellthiefs_Edge);
+                        if (AP.Any(apchamp => Autoplay.Bot.BaseSkinName.ToLower() == apchamp.ToLower()))
+                        {
+                            Autoplay.Bot.BuyItem(ItemId.Dorans_Ring);
+                        }
+                        else if (Supports.Any(sp => Autoplay.Bot.BaseSkinName.ToLower() == sp.ToLower()))
+                        {
+                            Autoplay.Bot.BuyItem(ItemId.Ancient_Coin);
+                        }
+                        else
+                        {
+                            Autoplay.Bot.BuyItem(ItemId.Dorans_Blade);
+                        }
+                        Autoplay.Bot.BuyItem(ItemId.Warding_Totem_Trinket);
                     }
-                    if (startingItem == 0)
-                    {
-                        Autoplay.Bot.BuyItem(ItemId.Dorans_Ring);
-                    }
-                    if (startingItem > 0)
-                    {
-                        Autoplay.Bot.BuyItem(ItemId.Ancient_Coin);
-                    }
-                     */
-                    if (AP.Any(apchamp => Autoplay.Bot.BaseSkinName.ToLower() == apchamp.ToLower()))
-                    {
-                        Autoplay.Bot.BuyItem(ItemId.Dorans_Ring);
-                    }
-                    else if (Supports.Any(sp => Autoplay.Bot.BaseSkinName.ToLower() == sp.ToLower()))
-                    {
-                        Autoplay.Bot.BuyItem(ItemId.Ancient_Coin);
-                    }
-                    else
-                    {
-                        Autoplay.Bot.BuyItem(ItemId.Dorans_Blade);
-                    }
-                    Autoplay.Bot.BuyItem(ItemId.Warding_Totem_Trinket);
-                }
-                //if (File.Exists(FileHandler._theFile) && (FileHandler.CustomShopList != null))
-                //{
-                    //foreach (var item in FileHandler.CustomShopList)
-                    //{
-                        //if (!HasItem(item))
-                       // {
-                            //BuyItem(item);
-                       // }
-                   // }
-               // }
-                //else
-                {
-                    foreach (var item in GetDefaultItemArray())
+                foreach (var item in GetDefaultItemArray())
                     {
                         if (!HasItem(item))
                         {
                             BuyItem(item);
                         }
                     }
-                }
+                
             }
         }
-
         public static bool HasItem(ItemId item)
         {
             if (item == ItemId.Mana_Potion || item == ItemId.Health_Potion)
             {
                 return Autoplay.RandomDecision();
             }
-            return Items.HasItem((int) item, Autoplay.Bot);
+            return Items.HasItem((int)item, Autoplay.Bot);
         }
 
         public static void BuyItem(ItemId item)
@@ -185,7 +121,7 @@ namespace Support
             if (map.Type == Utility.Map.MapType.SummonersRift)
             {
                 if (AP.Any(apchamp => Autoplay.Bot.BaseSkinName.ToLower() == apchamp.ToLower()))
-                {return SRShopListAP;}
+                { return SRShopListAP; }
                 return SRShopListAD.OrderBy(item => Autoplay.Rand.Next()).ToArray();
             }
             if (map.Type == Utility.Map.MapType.TwistedTreeline)
@@ -233,7 +169,7 @@ namespace Support
             AllyHeroes = AllyHeroes.OrderBy(hero => hero.Distance(Autoplay.Bot)).ToList();
             EnemyHeroes = EnemyHeroes.OrderBy(hero => hero.Distance(Autoplay.Bot)).ToList();
 
-
+         
             //Turrets
             AllTurrets = ObjectManager.Get<Obj_AI_Turret>().ToList();
             AllyTurrets = AllTurrets.FindAll(turret => turret.IsAlly).ToList();
@@ -262,29 +198,20 @@ namespace Support
             return Supports.Any(support => hero.BaseSkinName.ToLower() == support.ToLower());
         }
 
-        public static bool IsAp(Obj_AI_Hero hero)
-        {
-            return AP.Any(ap => hero.BaseSkinName.ToLower() == ap.ToLower());
-        }
-
         public static int NearbyAllyMinions(Obj_AI_Base x, int distance)
         {
             return ObjectManager.Get<Obj_AI_Minion>()
-                .Count(minion => minion.IsAlly && !minion.IsDead && minion.Distance(x) < distance);
+                    .Count(minion => minion.IsAlly && !minion.IsDead && minion.Distance(x) < distance);
         }
-
         public static int NearbyAllies(Obj_AI_Base x, int distance)
         {
             return ObjectManager.Get<Obj_AI_Hero>()
-                .Count(
-                    hero => hero.IsAlly && !hero.IsDead && !HasSmite(hero) && !hero.IsMe && hero.Distance(x) < distance);
+                    .Count(hero => hero.IsAlly && !hero.IsDead && !HasSmite(hero) && !hero.IsMe && hero.Distance(x) < distance);
         }
-
         public static int NearbyAllies(Vector3 x, int distance)
         {
             return ObjectManager.Get<Obj_AI_Hero>()
-                .Count(
-                    hero => hero.IsAlly && !hero.IsDead && !HasSmite(hero) && !hero.IsMe && hero.Distance(x) < distance);
+                    .Count(hero => hero.IsAlly && !hero.IsDead && !HasSmite(hero) && !hero.IsMe && hero.Distance(x) < distance);
         }
 
         public static bool ShouldSupportTopLane
@@ -292,9 +219,9 @@ namespace Support
             get
             {
                 return NearbyAllies(Autoplay.BotLanePos.To3D(), 4500) > 1 &&
-                       NearbyAllies(Autoplay.TopLanePos.To3D(), 4500) == 1;
+                    NearbyAllies(Autoplay.TopLanePos.To3D(), 4500) == 1;
             }
         }
     }
-}
-
+       
+    }

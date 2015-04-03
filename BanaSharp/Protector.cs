@@ -119,7 +119,7 @@ namespace Support
                 Revealer = new AutoBushRevealer(Menu.SubMenu("Misc"));
 
                 // Internal events
-                Game.OnUpdate += OnGameUpdate;
+                Game.OnUpdate += OnUpdate;
                 SkillshotDetector.OnDetectSkillshot += OnDetectSkillshot;
                 Obj_AI_Base.OnProcessSpellCast += HeroOnProcessSpellCast;
                 Obj_AI_Base.OnProcessSpellCast += TurretOnProcessSpellCast;
@@ -450,7 +450,7 @@ namespace Support
             }
         }
 
-        private static void OnGameUpdate(EventArgs args)
+        private static void OnUpdate(EventArgs args)
         {
             try
             {
@@ -462,7 +462,7 @@ namespace Support
                 //Remove the detected skillshots that have expired.
                 DetectedSkillshots.RemoveAll(skillshot => !skillshot.IsActive());
 
-                //Trigger OnGameUpdate on each skillshot.
+                //Trigger OnUpdate on each skillshot.
                 foreach (var skillshot in DetectedSkillshots)
                 {
                     skillshot.Game_OnUpdate();

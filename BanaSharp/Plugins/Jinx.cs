@@ -4,9 +4,9 @@ using System.Linq;
 using LeagueSharp;
 using LeagueSharp.Common;
 using SharpDX;
-using Support.Util;
+using AIM.Util;
 
-namespace Support.Plugins
+namespace AIM.Plugins
 {
     public class Jinx : PluginBase
     {

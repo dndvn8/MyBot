@@ -1,9 +1,9 @@
 ﻿using System;
-using Support.Util;
+using AIM.Util;
 using LeagueSharp;
 using LeagueSharp.Common;
 
-namespace Support.Plugins
+namespace AIM.Plugins
 {
     public class Jax : PluginBase
     {

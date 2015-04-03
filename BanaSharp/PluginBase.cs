@@ -165,7 +165,7 @@ namespace Support
         /// </summary>
         private void InitConfig()
         {
-            Config = new Menu("AutoSharp: " + Player.ChampionName, Player.ChampionName, true);
+            Config = new Menu("BanaSharp: " + Player.ChampionName, Player.ChampionName, true);
             Config.AddSubMenu(new Menu("Orbwalking", "Orbwalking"));
             TargetSelector.AddToMenu(Config.AddSubMenu(new Menu("Target Selector", "Target Selector")));
 
