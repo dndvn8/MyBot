@@ -465,7 +465,7 @@ namespace Support
                 //Trigger OnGameUpdate on each skillshot.
                 foreach (var skillshot in DetectedSkillshots)
                 {
-                    skillshot.Game_OnGameUpdate();
+                    skillshot.Game_OnUpdate();
                 }
 
                 // Protect

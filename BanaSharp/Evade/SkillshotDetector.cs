@@ -93,14 +93,6 @@ namespace Support.Evade
 
             var missile = (Obj_SpellMissile) sender;
 
-#if DEBUG
-            if (missile.SpellCaster is Obj_AI_Hero)
-            {
-                
-            }
-
-#endif
-
 
             var unit = missile.SpellCaster;
             if (!unit.IsValid || (unit.Team == ObjectManager.Player.Team))
