@@ -10,3 +10,16 @@ C:\Users\Banana\AppData\Roaming\LS8D2E4D62\Repositories\9BCC5E60\trunk\AutoSharp
 C:\Users\Banana\AppData\Roaming\LS8D2E4D62\Repositories\9BCC5E60\trunk\AutoSharpporting\obj\Debug\BanaSharp.csprojResolveAssemblyReference.cache
 C:\Users\Banana\AppData\Roaming\LS8D2E4D62\Repositories\9BCC5E60\trunk\AutoSharpporting\obj\Debug\BanaSharp.exe
 C:\Users\Banana\AppData\Roaming\LS8D2E4D62\Repositories\9BCC5E60\trunk\AutoSharpporting\obj\Debug\BanaSharp.pdb
+E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.exe.config
+E:\GitHub\MyBot\BanaSharp\obj\Debug\BanaSharp.exe
+E:\GitHub\MyBot\BanaSharp\obj\Debug\BanaSharp.pdb
+E:\GitHub\MyBot\BanaSharp\obj\Debug\BanaSharp.csprojResolveAssemblyReference.cache
+E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.exe
+E:\GitHub\MyBot\BanaSharp\bin\Release\BanaSharp.pdb
+E:\GitHub\MyBot\BanaSharp\bin\Release\clipper_library.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.Common.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\SharpDX.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\SharpDX.Direct3D9.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.Sandbox.dll
+E:\GitHub\MyBot\BanaSharp\bin\Release\LeagueSharp.xml

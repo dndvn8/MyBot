@@ -59,12 +59,13 @@
     <Reference Include="clipper_library">
       <HintPath>E:\LienMinhHuyenThoai\LeagueSharp\System\clipper_library.dll</HintPath>
     </Reference>
-    <Reference Include="LeagueSharp, Version=1.0.0.25, Culture=neutral, processorArchitecture=x86">
+    <Reference Include="LeagueSharp, Version=1.0.0.25, Culture=neutral, PublicKeyToken=a41ba14f653257a6, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\LienMinhHuyenThoai\LeagueSharp\System\LeagueSharp.dll</HintPath>
+      <HintPath>..\..\..\LienMinhHuyenThoai\LeagueSharp\System\LeagueSharp.dll</HintPath>
     </Reference>
-    <Reference Include="LeagueSharp.Common">
-      <HintPath>E:\LienMinhHuyenThoai\LeagueSharp\System\LeagueSharp.Common.dll</HintPath>
+    <Reference Include="LeagueSharp.Common, Version=1.0.0.36, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\LienMinhHuyenThoai\LeagueSharp\System\LeagueSharp.Common.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX">
       <HintPath>E:\LienMinhHuyenThoai\LeagueSharp\System\SharpDX.dll</HintPath>
